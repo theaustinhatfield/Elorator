@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+{% block title %}Submit — YC Arena{% endblock %}
+{% block content %}
+<ul class="breadcrumb"><li class="breadcrumb-item"><a href="{% url 'leaderboard' %}">Leaderboard</a></li><li class="breadcrumb-item">Submit</li></ul>
+<div class="page-header">
+  <div>
+    <h1 class="page-title">Submit your startup</h1>
+    <p class="page-sub">Gets 10 placement matches vs anchored ideas. Public is free + listed; private is hidden.</p>
+  </div>
+</div>
+<div class="card"><div class="card-body">
+  <form method="post">
+    {% csrf_token %}
+    {% if form.non_field_errors %}<div class="alert alert-error">{{ form.non_field_errors }}</div>{% endif %}
+    {% for field in form %}
+    <div class="form-group">
+      <label class="form-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
+      {{ field }}
+      {% if field.help_text %}<div class="form-help">{{ field.help_text }}</div>{% endif %}
+      {% for e in field.errors %}<div class="form-error">{{ e }}</div>{% endfor %}
+    </div>
+    {% endfor %}
+    <button class="btn btn-primary btn-block" type="submit">Rate my startup (10 matches)</button>
+  </form>
+</div></div>
+{% endblock %}

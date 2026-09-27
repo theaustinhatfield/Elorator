@@ -1,0 +1,82 @@
+[
+  {
+    "company": "Dropbox",
+    "product": "Dropbox synchronizes files across your/your team's computers. It's much better than uploading or email, because it's automatic, integrated into Windows, and fits into the way you already work. There's also a web interface, and the files are securely backed up to Amazon S3. Dropbox is kind of like taking the best elements of subversion, trac and rsync and making them 'just work' for the average individual or team. It's currently in private beta and I add batches of people every few days. Planned freemium: free 1GB, ~$5/mo for 10GB, plus team and enterprise tiers.",
+    "tagline": "Cloud sync that just works for files",
+    "whats_new": "",
+    "competitors": "",
+    "insight": "YC S07 (funded). Drew Houston: programming since age 5, profitable online SAT prep company in college, wrote a real-money poker bot. Leaving Bit9 to work on this full time.",
+    "outcome": "successful",
+    "batch": "S07"
+  },
+  {
+    "company": "GitLab",
+    "product": "We're making open source software to collaborate on code. It started as 'run your own GitHub' that most users deploy on their own server(s). GitLab allows you to version control code including pull/merge requests, forking and public projects. It also includes project wikis and an issue tracker. Over 100k organizations use it, including Qualcomm, NASA and Nasdaq OMX as paying customers. We also offer GitLab CI that tests code with a distributed set of workers. Traction: $1M ARR run rate, ~1M users, ~60% monthly revenue growth. Declined a $10M acquisition offer.",
+    "tagline": "Open-source code collaboration, self-hosted",
+    "whats_new": "",
+    "competitors": "",
+    "insight": "YC W15 (funded). Sytse Sijbrandij + Dmitriy Zaporozhets. 600+ contributors, most popular open source version control software.",
+    "outcome": "successful",
+    "batch": "W15"
+  },
+  {
+    "company": "Mixpanel",
+    "product": "Mixpanel is a business intelligence service that helps improve online companies by tracking user interactions, engagement, and optimization avenues instead of just tracking page views. It lets teams learn about customers through interaction data and identify conversion funnels \u2014 the paths visitors take to registrations, purchases or goal pages. Companies otherwise burn scarce time and money building homebrew internal analytics that are less robust. Alpha already earning revenue at a profit, with Posterous, TicketStumbler and HeyZap integrating. Freemium subscription scaled on usage, like Amazon S3.",
+    "tagline": "Event analytics, not just pageviews",
+    "whats_new": "",
+    "competitors": "",
+    "insight": "YC S09 (funded). Suhail Doshi: OpenSocial apps with 1M+ installs. Tim Trefren: top 1% SAT, National Merit Scholar. Both committed full-time.",
+    "outcome": "successful",
+    "batch": "S09"
+  },
+  {
+    "company": "Cruise",
+    "product": "Cruise builds a system that inexpensively turns your car into a self-driving vehicle. The product is an aftermarket add-on for certain vehicles that bolts on like a roof rack, with cameras, radar, GPS and other sensors, targeting under $3,000 per unit \u2014 an order of magnitude cheaper than current efforts. We constrain the problem with commodity hardware and proven algorithms, solving 90% of scenarios. JD Power found 20% of drivers would buy self-driving tech at ~$3k: a $100B+ US market. Revenue from hardware sales/installs, then subscriptions.",
+    "tagline": "Aftermarket self-driving for existing cars",
+    "whats_new": "",
+    "competitors": "",
+    "insight": "YC W14 (funded). Kyle Vogt + Jeremy Guillory. Both built self-driving cars before (DARPA challenges, Graymatter, MIT). Demo Audi S4 acquired in first two weeks.",
+    "outcome": "successful",
+    "batch": "W14"
+  },
+  {
+    "company": "OpenPhone",
+    "product": "OpenPhone is a phone system equipped with CRM capabilities, built from the ground up for small businesses. Through our mobile app, owners get a dedicated business number on existing devices \u2014 personalized voicemail, business hours, shared team inboxes, appointment scheduling, docs/signatures/payments over text, and integrations. We own the communication channel, so the CRM fills itself instead of burdening the user. Launched Jan 2018: 1,500 users at 200% MoM, 32 paying at $10/mo within two weeks of launching billing. Subscription $10/mo scaling to $50-200 tiers.",
+    "tagline": "Phone system meets CRM for small business",
+    "whats_new": "",
+    "competitors": "",
+    "insight": "YC S18 (funded). Ex-Joist mobile products for 500k+ trade contractors; cofounder launched Vidyard GoVideo to 200k+ users.",
+    "outcome": "successful",
+    "batch": "S18"
+  },
+  {
+    "company": "Paystack",
+    "product": "Software and services for merchants in Africa to accept online payments from local and international customers. Full-stack APIs that securely collect, encrypt, transmit and store card data in a protected vault, with continuous anti-fraud and chargeback protection. Partnered with Access Bank (3rd largest in Nigeria), PCI-compliant infrastructure built. Private beta: 12 pilot merchants, 400 on the waitlist growing 10x monthly, transaction volume up 15x, $1,300 revenue. Merchants use it even without settlements working yet. Revenue: 1.9% + 50c per transaction.",
+    "tagline": "Stripe for African merchants",
+    "whats_new": "",
+    "competitors": "",
+    "insight": "YC W16 (funded). Shola Akinlade: spent 2014 implementing bank payment systems after living this pain since his first startup in 2010. 150+ merchant conversations.",
+    "outcome": "successful",
+    "batch": "W16"
+  },
+  {
+    "company": "CommandBar",
+    "product": "Foobar is a searchbar built into web apps that lets end-users discover and actually execute commands \u2014 not just search \u2014 straight from the searchbar. A configurable web component a front-end developer can prototype in minutes. Improves onboarding, feature discovery, and retention, plus a web interface for maintaining commands, personalization, and analytics on user intent. 4 apps (Kapwing, StdLib, Plan, Meetingbird) committed to free pilots. Our insight: an executable searchbar should be a bought product, not a built feature \u2014 and the intent-to-action maps it creates are a network-effect moat. Subscription ~$100-1000/mo like Intercom.",
+    "tagline": "Command bar for any web app (applied as Foobar)",
+    "whats_new": "",
+    "competitors": "",
+    "insight": "YC S20 (funded). 3 founders; previously built codePost to 60 universities over 12 months full-time before pivoting.",
+    "outcome": "successful",
+    "batch": "S20"
+  },
+  {
+    "company": "Apptimize",
+    "product": "Apptimize lets you A/B test mobile applications while keeping the native experience \u2014 no blind pushes, no waiting on app updates or users to upgrade. Web dashboard plus WYSIWYG editor so non-programmers can run experiments. Removes the pain of designing controlled experiments, serving variations, collecting results, and calculating statistical significance \u2014 handling mobile-hard problems (intermittent internet, no cookies, version fragmentation) as its core business. Private beta launched with 100+ signups, end-to-end on Android, iOS coming. Plan: monthly subscriptions, ~$1K/mo premium tier.",
+    "tagline": "A/B testing for native mobile apps",
+    "whats_new": "",
+    "competitors": "",
+    "insight": "YC S13 (funded). Nancy Hua: ran Fixed Income Quant Strategies at GETCO. Jeremy: owned IndexedDB in Chrome, started the London Chrome team.",
+    "outcome": "successful",
+    "batch": "S13"
+  }
+]

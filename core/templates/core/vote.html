@@ -1,0 +1,49 @@
+{% extends 'core/base.html' %}
+{% block title %}Vote — YC Arena{% endblock %}
+{% block content %}
+<div class="page-header">
+  <div>
+    <h1 class="page-title">Which would you fund?</h1>
+    <p class="page-sub">Head-to-head human votes move Elo just like AI placement matches.</p>
+  </div>
+  <div class="page-actions"><a href="{% url 'leaderboard' %}" class="btn btn-secondary">Leaderboard</a></div>
+</div>
+
+<div class="row">
+  <div class="col-6-12">
+    <div class="duo-card"><div class="card-pad">
+      <div class="pill-name mb-2">A · {{ sub_a.display_name }}</div>
+      {% if sub_a.tagline %}<div class="card-desc">{{ sub_a.tagline }}</div>{% endif %}
+      <div class="field-block"><div class="field-label">Pitch</div><div class="field-value-muted">{{ sub_a.pitch|truncatewords:60 }}</div></div>
+      <a href="{% url 'detail' sub_a.id %}" class="btn btn-ghost btn-sm">Full pitch →</a>
+    </div></div>
+  </div>
+  <div class="col-6-12">
+    <div class="duo-card"><div class="card-pad">
+      <div class="pill-name mb-2">B · {{ sub_b.display_name }}</div>
+      {% if sub_b.tagline %}<div class="card-desc">{{ sub_b.tagline }}</div>{% endif %}
+      <div class="field-block"><div class="field-label">Pitch</div><div class="field-value-muted">{{ sub_b.pitch|truncatewords:60 }}</div></div>
+      <a href="{% url 'detail' sub_b.id %}" class="btn btn-ghost btn-sm">Full pitch →</a>
+    </div></div>
+  </div>
+</div>
+
+<div class="card mt-3"><div class="card-body">
+  <form method="post">
+    {% csrf_token %}
+    <input type="hidden" name="a_id" value="{{ sub_a.id }}">
+    <input type="hidden" name="b_id" value="{{ sub_b.id }}">
+    {% if form.non_field_errors %}<div class="alert alert-error">{{ form.non_field_errors }}</div>{% endif %}
+    <div class="form-group">
+      <label class="form-label">Winner</label>
+      {{ form.winner }}
+      {% for e in form.winner.errors %}<div class="form-error">{{ e }}</div>{% endfor %}
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="{{ form.reason.id_for_label }}">Why? (optional)</label>
+      {{ form.reason }}
+    </div>
+    <button class="btn btn-primary btn-block" type="submit">Count my vote</button>
+  </form>
+</div></div>
+{% endblock %}

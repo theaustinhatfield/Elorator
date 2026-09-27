@@ -1,0 +1,57 @@
+{% extends 'core/base.html' %}
+{% block title %}YC Arena — startup leaderboard{% endblock %}
+{% block container_class %}container container-wide{% endblock %}
+{% block content %}
+<div class="page-header">
+  <div>
+    <h1 class="page-title">{{ arena.title }}</h1>
+    <p class="page-sub">{{ arena.description }}</p>
+    <p class="text-sm text-muted mt-2">{{ total_submissions }} public startups · {{ total_matches }} pairwise matches · Elo from 1500</p>
+  </div>
+  <div class="page-actions">
+    <a href="{% url 'vote' %}" class="btn btn-secondary">Vote head-to-head</a>
+    <a href="{% url 'submit' %}" class="btn btn-primary">Submit your startup</a>
+  </div>
+</div>
+
+{% if ratings %}
+<div class="masonry">
+  {% for r in ratings %}
+  <div class="masonry-item duo-card"><div class="card-pad">
+    <div class="flex items-center justify-between gap-2 mb-2">
+      <span class="rank-badge">#{{ forloop.counter }} · {{ r.rating }}</span>
+      {% if r.submission.batch %}<span class="pill-rating">{{ r.submission.batch }}</span>{% endif %}
+    </div>
+    <div class="card-title">{{ r.submission.display_name }}</div>
+    {% if r.submission.tagline %}<div class="card-desc">{{ r.submission.tagline }}</div>{% endif %}
+    <div class="field-block">
+      <div class="field-label">Pitch</div>
+      <div class="field-value-muted">{{ r.submission.pitch|truncatewords:32 }}</div>
+    </div>
+    {% if r.submission.founders_blurb %}
+    <div class="field-block">
+      <div class="field-label">Founders</div>
+      <div class="field-value-muted">{{ r.submission.founders_blurb|truncatewords:20 }}</div>
+    </div>
+    {% endif %}
+    <div class="stats">
+      <span>{{ r.wins }}W–{{ r.losses }}L{% if r.ties %} · {{ r.ties }}T{% endif %}</span>
+      <span class="stat-dot"></span>
+      <span>{% if r.submission.source == 'ai' %}🤖 {{ r.submission.model_name|default:'ai' }}{% else %}👤 founder{% endif %}</span>
+    </div>
+    <div class="card-actions">
+      <a href="{% url 'detail' r.submission.id %}" class="btn btn-secondary btn-sm">View + rating</a>
+    </div>
+  </div></div>
+  {% endfor %}
+</div>
+{% else %}
+<div class="duo-empty">
+  <div class="empty-icon">🚀</div>
+  <div class="empty-title">No public startups yet</div>
+  <div class="empty-text">Seed the arena or submit the first YC-style pitch.</div>
+  <a href="{% url 'submit' %}" class="btn btn-primary">Submit the first one</a>
+  <p class="text-sm text-muted mt-2">Or run: <code>python manage.py seed_yc_arena</code></p>
+</div>
+{% endif %}
+{% endblock %}
