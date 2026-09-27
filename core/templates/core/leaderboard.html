@@ -15,20 +15,37 @@
 </div>
 
 <div class="duo-card"><div class="card-pad">
-  <div class="section-title">Average Elo by group — judged on which idea YC should admit</div>
-  <div class="flex items-center justify-between gap-3" style="align-items:flex-end; max-width:640px; margin:0 auto; padding-top:8px;">
-    {% for g in groups %}
-    <div style="flex:1; text-align:center;">
-      <div style="font-size:15px; font-weight:800;">{{ g.avg }}</div>
-      <div style="height:180px; display:flex; align-items:flex-end; justify-content:center;">
-        <div style="width:64px; max-width:80%; height:{{ g.pct }}%; border-radius:8px 8px 0 0; {% if g.is_top %}background:#0A84FF;{% else %}background:#AEAEB2;{% endif %}" title="{{ g.label }}: {{ g.avg }}"></div>
+  <div class="section-title">Average Elo by group</div>
+  <div style="display:flex; max-width:640px; margin:0 auto; padding-top:8px;">
+    <div style="width:44px; flex:none;">
+      <div style="position:relative; height:180px;">
+        {% for t in yticks %}
+        <div class="text-xs text-muted" style="position:absolute; bottom:{{ t.pct }}%; transform:translateY(50%); right:6px; white-space:nowrap;">{{ t.value }}</div>
+        {% endfor %}
       </div>
-      <div style="font-size:13px; font-weight:800; margin-top:8px;">{{ g.label }}</div>
-      <div class="text-xs text-muted">n={{ g.n }} · {{ g.note }}</div>
+      <div style="height:44px;"></div>
     </div>
-    {% endfor %}
+    <div style="flex:1; min-width:0;">
+      <div style="position:relative; height:180px; display:flex; align-items:flex-end; border-left:1.5px solid var(--separator); border-bottom:1.5px solid var(--separator);">
+        {% for t in yticks %}
+        <div style="position:absolute; left:0; right:0; bottom:{{ t.pct }}%; border-top:1px dashed var(--separator); opacity:0.7;"></div>
+        {% endfor %}
+        {% for g in groups %}
+        <div style="flex:1; height:100%; display:flex; align-items:flex-end; justify-content:center; position:relative;">
+          <div style="width:64px; max-width:80%; height:{{ g.pct }}%; border-radius:6px 6px 0 0; {% if g.is_top %}background:#0A84FF;{% else %}background:#AEAEB2;{% endif %}" title="{{ g.label }}: {{ g.avg }}"></div>
+        </div>
+        {% endfor %}
+      </div>
+      <div style="display:flex;">
+        {% for g in groups %}
+        <div style="flex:1; text-align:center; padding-top:8px;">
+          <div style="font-size:15px; font-weight:800;">{{ g.avg }}</div>
+          <div style="font-size:13px; font-weight:800; margin-top:2px;">{{ g.label }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
   </div>
-  <p class="text-sm text-muted mt-2" style="text-align:center;">Every matchup was judged on one question: which idea would you rather admit into YC?</p>
 </div></div>
 
 <div class="duo-card mt-3"><div class="card-pad">

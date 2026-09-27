@@ -60,12 +60,15 @@ def leaderboard(request):
     for g in groups:
         g['pct'] = round(100 * (g['avg'] - lo) / max(hi - lo, 1))
         g['is_top'] = g['avg'] == top_avg
+    step = (hi - lo) / 4
+    yticks = [{'value': int(round(lo + i * step)), 'pct': i * 25} for i in range(5)]
 
     ranked = list(enumerate(ratings, start=1))
     ctx = {
         'arena': arena,
         'ratings': ratings,
         'groups': groups,
+        'yticks': yticks,
         'all_rows': [{'rank': i, 'r': r} for i, r in ranked],
         'total_submissions': len(ratings),
         'total_matches': arena.matches.count(),
