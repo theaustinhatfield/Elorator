@@ -54,6 +54,8 @@ def leaderboard(request):
     ]
     models_seen = []
     for r in ratings:
+        if r.submission.source != 'ai':
+            continue
         m = r.submission.model_name or 'ai'
         if m not in models_seen:
             models_seen.append(m)

@@ -4,7 +4,7 @@
   "criterion": "which startup would you rather admit into YC (idea merit only, no team, no traction)",
   "matches_per_entry": 15,
   "seed": 7,
-  "n_apps": 89
+  "n_apps": 119
  },
  "ranks": {
   "Dropbox": {
@@ -362,6 +362,126 @@
   "AthleteNet (FamilyLeaf)": {
    "rank": 89,
    "note": "Tiny niche site builder"
+  },
+  "PermitThread": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "ScopePatch": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "LienSignal": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "BoilerMatch": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "ElevatorProof": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "WeldWitness": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "BackflowBench": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "FirePanelLog": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "MastOrder": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "FuelCardAudit": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "RouteRelay": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "ColdGap": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "FreightBillLens": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "PalletProof": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "HazmatRouteCheck": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "DockApron": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "AisleProof": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "ForkNear": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "ToolCustody": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "ScaffoldLedger": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "PaintBatchLog": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "AwningMeasure": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "GlassEdge": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "SlabRoute": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "GroutBatch": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "PunchRoute": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "SpecSwap": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "WallMouth": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "FireDoorMap": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
+  },
+  "TireTrace": {
+   "rank": null,
+   "note": "space-bunny-alpha idea; judged head-to-head in 15 pairings"
   }
  },
  "ties": [],
@@ -1625,6 +1745,426 @@
    "outcome": "pending",
    "source": "ai",
    "model": "muse-spark-1.3"
+  },
+  {
+   "company": "PermitThread",
+   "tagline": "Permit dependencies without the chase",
+   "product": "PermitThread serves general contractors and commercial tenant-improvement teams tracking every approval across properties, jurisdictions, and trades. It replaces scattered emails, counter visits, and ambiguous revision requests with a dependency-aware workflow. The platform extracts application requirements, links each document to an approval, assigns owners, records counter comments, and alerts teams before deadlines or expiring permits become blockers. It also generates jurisdiction-specific handoff packets for inspectors and project managers.",
+   "whats_new": "Email chains, spreadsheet trackers, permit portals, and calls to plan reviewers",
+   "competitors": "permitting portals, construction-management suites, and municipal software",
+   "insight": "Most permit delays are dependency failures, not document failures.",
+   "money": "Monthly subscription based on active projects, plus per-seat pricing",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "ScopePatch",
+   "tagline": "Keep estimating models current",
+   "product": "ScopePatch helps specialty subcontractors maintain labor assumptions, material prices, exclusions, and scope language inside their estimating templates. Estimators upload spreadsheets and proposals, and the service identifies stale supplier links, inconsistent units, missing alternates, and changed wording that could alter a bid. It produces review queues and versioned patch recommendations while preserving the contractor\u2019s existing estimating process. Approved changes flow back into controlled copies rather than silently rewriting estimates.",
+   "whats_new": "Spreadsheet revisions, manual price checks, shared drives, and PDF markup",
+   "competitors": "estimating software, procurement platforms, and document-management tools",
+   "insight": "A small scope-language change can invalidate an otherwise accurate estimate.",
+   "money": "Monthly subscription priced by estimator seats and connected templates",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "LienSignal",
+   "tagline": "Notice defects before filing",
+   "product": "LienSignal reviews preliminary notices, notices of completion, and lien waivers for title and construction companies before they are delivered. It catches incorrect legal names, address mismatches, missing dates, improper notarization, inconsistent descriptions, and jurisdiction-specific filing risks. The service compares each form against the contract, invoice package, property record, and delivery evidence, then returns ranked corrections. Legal staff can approve edits while routine transactions follow controlled rules.",
+   "whats_new": "Paralegal review, fillable forms, checklists, and emailed templates",
+   "competitors": "title management systems, legal-document software, and static form vendors",
+   "insight": "Lien defects often emerge from mismatches across otherwise valid source documents.",
+   "money": "Per-document review pricing with optional monthly account plans",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "BoilerMatch",
+   "tagline": "Match boiler retrofits to buildings",
+   "product": "BoilerMatch helps mechanical contractors qualify building-boiler replacement opportunities before sending a technician. A contractor submits utility bills, equipment photos, building details, and desired work dates. The service estimates load uncertainty, identifies likely electrical or venting constraints, and recommends replacement and repair options appropriate to the building. It produces a pre-visit brief highlighting access restrictions, required documents, shutdown considerations, and permit triggers so survey visits are more productive.",
+   "whats_new": "Manufacturer calculators, site-survey spreadsheets, phone questionnaires, and search ads",
+   "competitors": "HVAC supplier tools, contractor field-service platforms, and equipment configurators",
+   "insight": "The expensive part of boiler discovery is often access, not equipment identification.",
+   "money": "Per-qualified-project fee with optional contractor subscription",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "ElevatorProof",
+   "tagline": "Audit elevator service evidence",
+   "product": "ElevatorProof helps elevator maintenance firms, property managers, and code consultants verify that inspection and service evidence is complete before a visit or compliance deadline. It organizes work orders, technician credentials, test readings, callback history, and equipment serial numbers, then flags missing or conflicting records. Technicians can gather corrections in the field, while managers receive a defensible readiness packet. The system does not certify code compliance; it improves the operational evidence behind compliance decisions.",
+   "whats_new": "Paper logs, shared spreadsheets, vendor portals, and manually assembled binders",
+   "competitors": "field-service software, compliance portals, and document repositories",
+   "insight": "Compliance evidence is weakest at the handoff between service, property, and inspection teams.",
+   "money": "Monthly pricing by inspected assets and connected service-provider seats",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "WeldWitness",
+   "tagline": "Trace critical welds to evidence",
+   "product": "WeldWitness helps fabrication shops, pressure-vessel contractors, and municipal inspectors assemble traceable records for critical welding procedures and production welds. It maps welder qualifications, procedure revisions, material certificates, inspection results, heat numbers, and repair histories to each weld. The platform highlights expired qualifications and interrupted continuity before records are requested. Teams can export a structured evidence packet, while immutable event notes show when responsibility changed without replacing the shop\u2019s quality system.",
+   "whats_new": "quality spreadsheets, filing cabinets, scanner folders, and manual audit binders",
+   "competitors": "quality-management suites, welding-data systems, and enterprise document tools",
+   "insight": "A weld record can be technically correct yet unusable because its lineage is disconnected.",
+   "money": "Monthly subscription based on tracked weld classes and production records",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "BackflowBench",
+   "tagline": "Prepare annual backflow tests",
+   "product": "BackflowBench assists plumbing contractors and water-authority administrators with recurring backflow-prevention test administration. It collects device locations, test history, hazard classifications, calibration information, and certification status, then builds annual or event-driven work packets. Remote completion links test readings to device identity and credentials, while exception rules identify missing gauge data, unusual corrections, or expired certifications. The platform generates authority-ready records and reminders without claiming to perform regulatory certification.",
+   "whats_new": "paper forms, calendar reminders, email attachments, and device-tracking spreadsheets",
+   "competitors": "plumbing field-service tools, water-authority portals, and compliance spreadsheets",
+   "insight": "Recurring compliance work breaks down when device identity differs across field and office records.",
+   "money": "Per-device annual service with optional administrative seat pricing",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "FirePanelLog",
+   "tagline": "Reconcile fire panel inspections",
+   "product": "FirePanelLog helps facilities teams and fire-protection contractors turn panel inspections into structured corrective work. Technicians import or enter circuit labels, device details, test results, access notes, and impairment records, and the service matches labels across drawings, inspection reports, and work orders. It flags contradictory readings, unlabeled circuits, overdue impairments, and inaccessible equipment. Property managers receive prioritized repair packets, while contractors reuse verified site context on later inspections instead of rediscovering panel conditions.",
+   "whats_new": "paper reports, spreadsheets, PDF markup, photos, and handwritten device lists",
+   "competitors": "facility-management suites, fire-servicing platforms, and compliance consultants",
+   "insight": "Inspection findings are difficult to close when circuit labels do not map cleanly to real equipment.",
+   "money": "Monthly platform fee by site count with contractor technician add-ons",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "MastOrder",
+   "tagline": "Coordinate antenna and pole work",
+   "product": "MastOrder helps wireless infrastructure contractors coordinate pole attachments, utility make-ready work, engineering reviews, and crew scheduling across distributed markets. It centralizes site photos, pole identifiers, attachment conflicts, landlord contacts, engineering requirements, and cure notices. The platform converts incomplete inputs into site-readiness tasks, compares field evidence with records, and produces market-specific work packages for make-ready crews. Managers can see which locations are blocked by paperwork, engineering, access, or physical conflicts.",
+   "whats_new": "whiteboards, spreadsheets, shared drives, email chains, and calls to utility partners",
+   "competitors": "telecom construction platforms, GIS tools, and project-management suites",
+   "insight": "Pole jobs fail in handoffs because site, engineering, and utility records use incompatible identities.",
+   "money": "Monthly pricing by active markets and pole-work orders",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "FuelCardAudit",
+   "tagline": "Find hidden fuel-card leakage",
+   "product": "FuelCardAudit helps small fleets reconcile fuel-card transactions with vehicle logs, routes, mileage, station locations, and maintenance records. It detects repeated purchases, implausible tank fills, off-route transactions, duplicate receipts, and cards used after vehicle retirement. Each exception is linked to its source evidence and assigned for resolution through a controlled workflow. Fleet owners receive categorized loss reports while bookkeepers retain the original accounting entries and can export accepted explanations for audit support.",
+   "whats_new": "spreadsheet matching, corporate-card dashboards, receipt folders, and manual audits",
+   "competitors": "fleet-card platforms, expense-management software, and accounting add-ons",
+   "insight": "Fuel misuse is often exposed by combining transaction patterns with vehicle operations, not cards alone.",
+   "money": "Percentage of verified savings with a monthly minimum platform fee",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "RouteRelay",
+   "tagline": "Hand off routes between depots",
+   "product": "RouteRelay coordinates route transfers between independent last-mile couriers and local delivery depots. Dispatchers describe vehicle capacity, service zones, handling units, timing constraints, and customer promises, and the platform recommends compatible handoff partners. It creates shared manifests, records scanned exceptions, assigns responsibility at transfer, and alerts both parties when route conditions change. Integration adapters can sync orders while the service preserves each carrier\u2019s independent customer contracts and operating policies.",
+   "whats_new": "phone brokering, shared spreadsheets, email manifests, and carrier marketplaces",
+   "competitors": "delivery-management platforms, freight exchanges, and carrier networks",
+   "insight": "Local delivery capacity is fragmented because transfer trust and accountability are harder to price than mileage.",
+   "money": "Per-handoff transaction fee with optional depot subscription",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "ColdGap",
+   "tagline": "Monitor temperature-sensitive handoffs",
+   "product": "ColdGap helps specialty grocers, caterers, and regional food distributors monitor temperature-sensitive handoffs across unreliable cold-chain segments. It ingests sensor readings, shipment events, packing configurations, and recipient acknowledgments to identify periods where evidence conflicts or excursion response is unclear. Dispatchers receive prioritized intervention lists, and recipients can review the complete temperature narrative when a shipment is disputed. The platform highlights process gaps by lane rather than merely displaying raw temperature charts.",
+   "whats_new": "data-logger downloads, spreadsheets, sensor vendor portals, and phone disputes",
+   "competitors": "cold-chain monitoring platforms, logistics suites, and sensor vendors",
+   "insight": "A temperature file without a verified handoff narrative cannot explain who should have acted.",
+   "money": "Monthly subscription by monitored lane and sensor endpoint",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "FreightBillLens",
+   "tagline": "Audit freight bills before payment",
+   "product": "FreightBillLens helps shippers and freight brokers review invoices and accessorial charges before they enter accounting. It compares billed line items with negotiated rates, contract terms, shipment milestones, proof-of-delivery data, and approved purchase orders. The service explains suspicious charges, groups recurring discrepancies by lane or carrier, and routes corrections through a resolution workflow. Approved invoices can be exported with the supporting evidence attached, reducing manual research without automatically authorizing freight payment.",
+   "whats_new": "invoice spreadsheets, carrier portals, payment-system rules, and manual audit samples",
+   "competitors": "freight-payment services, transportation-management systems, and spend-analysis tools",
+   "insight": "Many freight disputes are ordinary accessorial charges that become invisible without contract context.",
+   "money": "Monthly platform fee based on invoice volume and connected back-office seats",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "PalletProof",
+   "tagline": "Validate returnable packaging loops",
+   "product": "PalletProof helps manufacturers, warehouses, and grocery buyers track reusable pallets, totes, and specialty containers through multi-company loops. It reconciles purchase events, warehouse movements, carrier scans, retailer receipts, and loss claims to find missing handoffs and duplicate physical units. The platform distinguishes container loss from administrative loss and produces evidence packets for chargebacks. Contracts can define different tolerances by site, product, and container type without changing the underlying accounting system.",
+   "whats_new": "Excel trackers, barcode systems, manual deposits, and carrier scan portals",
+   "competitors": "returnable-transport-item platforms, warehouse systems, and asset-tracking vendors",
+   "insight": "Reusable packaging disputes become expensive when ownership changes faster than digital records do.",
+   "money": "Per-container-month pricing with tiers by tracked packaging type",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "HazmatRouteCheck",
+   "tagline": "Screen hazardous-material routes",
+   "product": "HazmatRouteCheck helps environmental transport brokers preview hazardous-material routes against customer restrictions, facility constraints, vehicle configuration, and shipment characteristics. It combines geography, road rules, tunnel classifications, emergency-response requirements, and facility access notes into a review queue. Dispatchers can annotate exceptions, select alternate paths, and attach the decision evidence to shipment files. The service organizes screening inputs and route changes; it does not replace regulatory review or issue transportation approvals.",
+   "whats_new": "mapping tools, permit checklists, regulatory PDFs, and calls to local authorities",
+   "competitors": "transportation compliance suites, route-planning systems, and consulting services",
+   "insight": "Route feasibility often depends on facility-specific restrictions missing from mainstream maps.",
+   "money": "Per-shipment screening fee with optional multi-route package pricing",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "DockApron",
+   "tagline": "Plan safer trailer approaches",
+   "product": "DockApron helps distribution centers review trailer approaches using site geometry, turning-radius evidence, approach angles, dock dimensions, and driver-provided observations. It turns field measurements and site photos into standardized approach scenarios, highlights clearance conflicts, and generates a briefing packet before arrival. Operations teams can compare successful and failed approaches by dock and trailer type. The service supports improvement planning but does not independently certify site accessibility or substitute for engineered measurements.",
+   "whats_new": "site visits, tape measures, whiteboards, photos, and incident reports",
+   "competitors": "facility-layout software, dock-management systems, and engineering consultants",
+   "insight": "Trailer approach failures are highly local and can be solved more cheaply than full site redesigns.",
+   "money": "Per-site study with optional monthly change-management subscriptions",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "AisleProof",
+   "tagline": "Validate warehouse slot changes",
+   "product": "AisleProof helps warehouse operators test new pick-slot assignments before applying them to a live warehouse management system. It compares proposed locations with demand history, equipment dimensions, product attributes, travel constraints, and slot attributes, then highlights likely exceptions. Operators can review the impact by zone, shift, and fulfillment policy, and export a controlled change file with assumptions attached. The product reduces configuration risk without becoming the system of record for inventory or labor.",
+   "whats_new": "spreadsheet analysis, consultant workshops, WMS trial changes, and observation studies",
+   "competitors": "warehouse-management systems, slotting tools, and operations consultants",
+   "insight": "Slot optimization fails in practice when the best theoretical location conflicts with physical handling constraints.",
+   "money": "Per-optimization study with optional software subscription for approved changes",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "ForkNear",
+   "tagline": "Detect forklift battery misuse",
+   "product": "ForkNear helps fleet managers identify battery problems before they become stranded-equipment events. It combines telematics, charger logs, battery serial records, shift schedules, and maintenance notes to flag overheating events, abnormal charge cycles, unexplained capacity decline, and mismatched equipment assignments. Managers receive a prioritized diagnostic queue with the evidence behind each alert. The platform guides inspection and replacement decisions while leaving battery testing and physical maintenance to qualified technicians.",
+   "whats_new": "battery logs, charger screens, maintenance spreadsheets, and technician inspections",
+   "competitors": "fleet-management platforms, battery vendors, and predictive-maintenance tools",
+   "insight": "Battery failures often become visible through assignment and charging behavior before electrical diagnostics.",
+   "money": "Monthly pricing by connected lift asset and battery type",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "ToolCustody",
+   "tagline": "Account for high-value mobile tools",
+   "product": "ToolCustody helps contractors control expensive powered tools that move among crews, vehicles, rentals, and customer sites. It records tool identity, custody changes, transfer evidence, service intervals, project allocation, and return conditions, then flags gaps in the chain of accountability. Crew leads can request handoffs from mobile devices, and administrators can investigate disputed damage with linked evidence. The service remains separate from payroll, equipment depreciation, and enterprise asset-ledger systems.",
+   "whats_new": "sign-out sheets, lockboxes, spreadsheets, barcode scans, and manager follow-ups",
+   "competitors": "asset-management systems, construction-accounting software, and equipment rental platforms",
+   "insight": "Tool disputes are mostly custody-process failures, not inventory-record failures.",
+   "money": "Per-month pricing for tracked tools with optional mobile scanning applications",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "ScaffoldLedger",
+   "tagline": "Reconcile scaffold use and access",
+   "product": "ScaffoldLedger helps specialty scaffold contractors and commercial property owners reconcile erected access with permits, drawings, inspections, and authorized users. It links scaffold tags, design changes, erection dates, inspection evidence, and move notifications to the same physical configuration. After a modification, the service identifies which approvals and briefings may no longer match, then routes work to the responsible contractor. Property teams receive a current access register without manually translating field notes into spreadsheets.",
+   "whats_new": "site photos, paper tags, inspection reports, shared drives, and verbal handoffs",
+   "competitors": "scaffolding management tools, contractor software, and permit systems",
+   "insight": "Scaffold compliance changes with physical configuration, not merely with the original erection date.",
+   "money": "Per-active-tag monthly pricing with optional owner portal access",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "PaintBatchLog",
+   "tagline": "Preserve architectural paint evidence",
+   "product": "PaintBatchLog helps facilities teams, preservation contractors, and paint manufacturers document color decisions for occupied buildings and sensitive properties. It links photographed surfaces, color readings, substrate conditions, environmental conditions, product batches, and approved mockups to each applied area. During later touch-ups or investigations, teams can identify nearby alternatives that share measurable characteristics instead of relying on a single archived swatch. The system supports evidence retrieval without claiming that color measurement alone proves exact material identity.",
+   "whats_new": "paint catalogs, swatch cards, spreadsheets, photographs, and finish samples",
+   "competitors": "paint-management systems, facility databases, and color-matching devices",
+   "insight": "Paint mismatch is often caused by undocumented substrate or application conditions, not incorrect color selection.",
+   "money": "Monthly subscription by maintained project and connected user seat",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "AwningMeasure",
+   "tagline": "Turn storefront measurements into orders",
+   "product": "AwningMeasure helps awning and storefront-fabrication firms collect structured measurements from distributed sales teams. Guided mobile capture records wall dimensions, mounting obstacles, clearance, storefront geometry, power locations, and reference photos, then flags contradictory or incomplete fields. Approved measurements generate a fabrication-ready handoff, while revisits are limited to unresolved evidence. The system reduces rework between sales, installation, and sewing rooms without replacing engineering review or final site verification.",
+   "whats_new": "clipboards, measuring apps, spreadsheets, photos, and manual redlines",
+   "competitors": "field-measurement tools, contractor CRMs, and awning fabrication software",
+   "insight": "Most awning rework starts before fabrication because field evidence is captured inconsistently.",
+   "money": "Monthly subscription by field representative with per-order processing fees",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "GlassEdge",
+   "tagline": "Validate architectural glass details",
+   "product": "GlassEdge helps glazing contractors and building-envelope teams review shop drawings, glazing schedules, safety classifications, edge conditions, anchors, and field measurements before fabrication. It detects conflicts across documents, including mismatched openings, unsupported glass configurations, and hardware references that changed between revisions. Reviewers can assign evidence, compare alternate glazing builds, and export an issue log linked to the relevant drawing area. Final engineering and code decisions remain with qualified professionals.",
+   "whats_new": "blueprint markups, PDF viewers, checklists, spreadsheets, and coordination meetings",
+   "competitors": "construction-document managers, takeoff tools, and building-code consultants",
+   "insight": "Glass fabrication risk hides in mismatches between the opening, design intent, hardware, and revision history.",
+   "money": "Per-project review fee with optional collaboration seats",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "SlabRoute",
+   "tagline": "Coordinate stone fabrication logistics",
+   "product": "SlabRoute helps stone fabricators coordinate slab procurement, remnants, quarry references, fabrication queues, and delivery constraints. It reconciles stone identifiers, dimensions, photographs, defect notes, measurements, and reserved remnants against active orders. Planners can identify duplicate or conflicting reservations, route replacement material, and produce a handoff packet for crates and installation crews. The system supports material traceability without promising a one-to-one link when natural-stone identification is inherently variable.",
+   "whats_new": "spreadsheets, photo folders, quarry emails, whiteboards, and manual inventory checks",
+   "competitors": "cabinet-shop software, stone inventory systems, and fabrication-management tools",
+   "insight": "Natural-stone inventory is fragmented because similar materials can have multiple identifiers and uncertain remnants.",
+   "money": "Monthly subscription by fabrication facility and active inventory volume",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "GroutBatch",
+   "tagline": "Control tile grout batch evidence",
+   "product": "GroutBatch helps tile contractors and project teams document color, mix, and installation conditions for matching repairs across floors, walls, and bathrooms. It stores component lots, water ratios, pigment information, mixing times, curing conditions, and photographed references, then alerts installers when a repair may exceed a material\u2019s working or cure window. Project records help procurement identify previous material combinations before placing additional orders. The platform preserves evidence without assuming that a color label defines a repeatable recipe.",
+   "whats_new": "receipt folders, handwritten mix notes, color charts, and contractor memory",
+   "competitors": "construction-document systems, project-management tools, and product vendors",
+   "insight": "Matching grout is a batch-evidence problem more often than a shade-name selection problem.",
+   "money": "Per-project subscription with optional material-vendor workspaces",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "PunchRoute",
+   "tagline": "Schedule punch items by trade",
+   "product": "PunchRoute helps commercial fit-out contractors close punch-list items by grouping defects by responsible trade rather than treating the list as one undifferentiated queue. It imports observations, photos, locations, trade assignments, access constraints, and dependency notes, then creates focused visits for electricians, painters, flooring teams, and other trades. Superseded photos and resolved items are retained as evidence, while project leaders can identify work waiting on access, materials, design decisions, or another trade.",
+   "whats_new": "spreadsheets, photo folders, verbal coordination, generic task apps, and weekly walks",
+   "competitors": "construction-management platforms, field-service tools, and commissioning software",
+   "insight": "Punch lists stall when each trade sees a global list without dependencies or focused responsibility.",
+   "money": "Monthly subscription by active project and field-user count",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "SpecSwap",
+   "tagline": "Catch substitutions before procurement",
+   "product": "SpecSwap helps architectural and interior-material distributors identify proposed substitutions that conflict with project specifications before orders are placed. It compares requested products, specified performance, application constraints, warranty assumptions, approvals, and CSI reference text, then routes unresolved differences to the project\u2019s designated reviewers. Evidence remains attached to each proposed alternate, and approved substitutions can be pushed back into the specification archive. The service supports documentation and does not provide final design approval.",
+   "whats_new": "email threads, PDF markups, product submittals, spreadsheets, and meetings",
+   "competitors": "construction-specification platforms, procurement systems, and document managers",
+   "insight": "Substitution problems are often caused by disconnected performance fields hidden in glossy product literature.",
+   "money": "Per-project fee with optional distributor and manufacturer workspaces",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "WallMouth",
+   "tagline": "Monitor concealed wall conditions",
+   "product": "WallMouth helps renovation contractors document concealed conditions before access panels, tile, drywall, or finishes are closed. It collects opening photos, wall-core samples, moisture readings, plumbing and electrical observations, framing notes, and consumer acknowledgments into a location-specific condition record. Reviewers can compare conditions before and after repair, while future teams can retrieve evidence before opening a finished area. The platform does not diagnose hidden conditions where none are observed.",
+   "whats_new": "photo folders, handwritten logs, voice messages, and reconstruction reports",
+   "competitors": "construction-documentation tools, inspection platforms, and project-management suites",
+   "insight": "Renovation disputes are often resolved by evidence that should exist before the wall is closed.",
+   "money": "Monthly subscription by active renovation projects and evidence-storage volume",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "FireDoorMap",
+   "tagline": "Keep fire doors assigned and verified",
+   "product": "FireDoorMap helps facilities teams and door contractors maintain a location-level register for fire doors, frames, hardware, labels, inspections, and repair evidence. It reconciles architectural plans, access-control records, vendor work orders, and on-site labels, then highlights doors with missing identity or contradictory status. Field staff can scan a door to capture condition and access constraints, while property managers receive exceptions grouped by floor, deficiency, and responsible party. The service supports evidence management rather than code certification.",
+   "whats_new": "paper logs, spreadsheets, floor plans, email photos, and manual door labels",
+   "competitors": "facility-management systems, compliance platforms, and door-hardware vendors",
+   "insight": "Fire-door accountability fails when access data, physical labels, and repair records live separately.",
+   "money": "Per-door monthly pricing with optional field-application and integration fees",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
+  },
+  {
+   "company": "TireTrace",
+   "tagline": "Digital tire disposal records for distributors",
+   "product": "Tire distributors managing fleet replacement programs need defensible evidence that old tires were removed and delivered to an authorized processor. TireTrace creates itemized disposal manifests, links VINs and tire specifications to pickup events, and sends processors signature requests for quantities, condition, and destination. Staff use a mobile form at collection, dispatch a QR record to the processor, and receive a completed certificate for customer and regulatory files. The system flags mismatched quantities before invoices are approved.",
+   "whats_new": "Spreadsheets, email chains, paper pickup tickets, and informal processor confirmations",
+   "competitors": "Generic waste-management software, paper manifest vendors, and in-house ERP modules",
+   "insight": "Tire distributors often know which fleet vehicle lost a tire but lack one shared record proving the matching physical tire reached final processing.",
+   "money": "$149 per location monthly plus $2 per processed tire, with volume discounts",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "space-bunny-alpha"
   }
  ]
 }

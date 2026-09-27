@@ -18,7 +18,7 @@ class Command(BaseCommand):
 
     def add_arguments(self, parser):
         parser.add_argument('--fixture', default='core/fixtures/yc_arena.json')
-        parser.add_argument('--judgments', default='core/fixtures/judgments_671.json')
+        parser.add_argument('--judgments', default='core/fixtures/judgments.json')
 
     def handle(self, *args, **opts):
         from core.models import EloRating, Match, Submission
