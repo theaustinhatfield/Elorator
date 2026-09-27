@@ -45,9 +45,12 @@ def leaderboard(request):
     rejected = [r for r in ratings if r.submission.source == 'human'
                 and r.submission.outcome != 'successful']
     spark = [r for r in ratings if r.submission.source == 'ai']
+    humans = [r for r in ratings if r.submission.source == 'human']
     groups = [
         {'key': 'accepted', 'label': 'Accepted humans', 'avg': avg(accepted), 'n': len(accepted),
          'note': 'actually admitted by YC'},
+        {'key': 'human', 'label': 'All humans', 'avg': avg(humans), 'n': len(humans),
+         'note': 'all 59 real applications'},
         {'key': 'spark', 'label': 'Muse Spark 1.3', 'avg': avg(spark), 'n': len(spark),
          'note': 'new ideas, no traction claimed'},
         {'key': 'rejected', 'label': 'Rejected humans', 'avg': avg(rejected), 'n': len(rejected),
