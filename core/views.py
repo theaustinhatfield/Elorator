@@ -37,12 +37,38 @@ def _public_ratings(arena):
 def leaderboard(request):
     arena = get_arena()
     ratings = list(_public_ratings(arena))
-    total_matches = arena.matches.count()
+
+    def avg(rs):
+        return round(sum(r.rating for r in rs) / len(rs), 1) if rs else 1500.0
+
+    accepted = [r for r in ratings if r.submission.source == 'human'
+                and r.submission.outcome == 'successful']
+    rejected = [r for r in ratings if r.submission.source == 'human'
+                and r.submission.outcome != 'successful']
+    spark = [r for r in ratings if r.submission.source == 'ai']
+    groups = [
+        {'key': 'accepted', 'label': 'Accepted humans', 'avg': avg(accepted), 'n': len(accepted),
+         'note': 'actually admitted by YC'},
+        {'key': 'spark', 'label': 'Muse Spark 1.3', 'avg': avg(spark), 'n': len(spark),
+         'note': 'new ideas, no traction claimed'},
+        {'key': 'rejected', 'label': 'Rejected humans', 'avg': avg(rejected), 'n': len(rejected),
+         'note': 'applied, not admitted'},
+    ]
+    lo = min([g['avg'] for g in groups] + [1300])
+    hi = max([g['avg'] for g in groups] + [1700])
+    for g in groups:
+        g['pct'] = round(100 * (g['avg'] - lo) / max(hi - lo, 1))
+
+    ranked = list(enumerate(ratings, start=1))
+    spark_rows = [{'rank': i, 'r': r} for i, r in ranked if r.submission.source == 'ai']
     ctx = {
         'arena': arena,
         'ratings': ratings,
-        'total_submissions': arena.submissions.filter(is_public=True).count(),
-        'total_matches': total_matches,
+        'groups': groups,
+        'top_rows': [{'rank': i, 'r': r} for i, r in ranked[:30]],
+        'spark_rows': spark_rows,
+        'total_submissions': len(ratings),
+        'total_matches': arena.matches.count(),
     }
     return render(request, 'core/leaderboard.html', ctx)
 

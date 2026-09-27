@@ -27,6 +27,12 @@
         {% if sub.batch %}<span class="stat-dot"></span><span>{{ sub.batch }}</span>{% endif %}
         <span class="stat-dot"></span><span>{% if sub.is_public %}public{% else %}private (unlisted){% endif %}</span>
       </div>
+      <div style="margin-bottom:12px;">
+        {% if sub.source == 'ai' %}<span class="badge badge-purple">🤖 New idea · {{ sub.model_name }}</span>
+        {% elif sub.outcome == 'successful' %}<span class="badge badge-green">Accepted by YC</span>
+        {% elif sub.outcome == 'unsuccessful' %}<span class="badge badge-gray">Applied — not admitted</span>
+        {% else %}<span class="badge badge-gray">Outcome pending</span>{% endif %}
+      </div>
       <div class="field-block"><div class="field-label">Pitch</div><div class="field-value">{{ sub.pitch|linebreaksbr }}</div></div>
       {% if sub.product %}<div class="field-block"><div class="field-label">Product</div><div class="field-value">{{ sub.product|linebreaksbr }}</div></div>{% endif %}
       {% if sub.founders_blurb %}<div class="field-block"><div class="field-label">Founders</div><div class="field-value">{{ sub.founders_blurb }}</div></div>{% endif %}
