@@ -51,11 +51,19 @@ def leaderboard(request):
          'note': 'actually admitted by YC'},
         {'key': 'human', 'label': 'All humans', 'avg': avg(humans), 'n': len(humans),
          'note': 'all 59 real applications'},
-        {'key': 'spark', 'label': 'Muse Spark 1.3', 'avg': avg(spark), 'n': len(spark),
-         'note': 'new ideas, no traction claimed'},
-        {'key': 'rejected', 'label': 'Rejected humans', 'avg': avg(rejected), 'n': len(rejected),
-         'note': 'applied, not admitted'},
     ]
+    models_seen = []
+    for r in ratings:
+        m = r.submission.model_name or 'ai'
+        if m not in models_seen:
+            models_seen.append(m)
+    pretty = {'muse-spark-1.3': 'Muse Spark 1.3', 'space-bunny-alpha': 'Space Bunny Alpha'}
+    for m in models_seen:
+        rs = [r for r in spark if (r.submission.model_name or 'ai') == m]
+        groups.append({'key': f'model-{m}', 'label': pretty.get(m, m),
+                       'avg': avg(rs), 'n': len(rs), 'note': 'new ideas, no traction claimed'})
+    groups.append({'key': 'rejected', 'label': 'Rejected humans', 'avg': avg(rejected), 'n': len(rejected),
+                   'note': 'applied, not admitted'})
     lo = min([g['avg'] for g in groups] + [1300])
     hi = max([g['avg'] for g in groups] + [1700])
     top_avg = max(g['avg'] for g in groups)
