@@ -45,10 +45,3 @@ class SubmissionForm(forms.Form):
         if len(pitch) < 40:
             raise forms.ValidationError('Give us a real pitch — at least a few sentences (40+ chars).')
         return pitch[:2000]
-
-
-class VoteForm(forms.Form):
-    winner = forms.ChoiceField(choices=[('a', 'A wins'), ('b', 'B wins')],
-        widget=forms.RadioSelect)
-    reason = forms.CharField(required=False, widget=forms.Textarea(
-        attrs={'class': 'form-textarea', 'rows': 2, 'placeholder': 'Why? (optional, one line)'}))

@@ -1,12 +1,11 @@
 from django.contrib import messages
-from django.db.models import Count, Q
+from django.db.models import Q
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
-from django.views.decorators.http import require_POST
 
-from .forms import SubmissionForm, VoteForm
+from .forms import SubmissionForm
 from .models import Contest, EloRating, Match, Submission
-from .services import apply_startup_vote, get_or_create_rating, rate_new_submission
+from .services import get_or_create_rating, rate_new_submission
 
 ARENA_TITLE = 'YC Arena'
 ARENA_DESCRIPTION = (
@@ -144,66 +143,6 @@ def detail(request, pk):
     })
 
 
-def _pick_vote_pair(arena):
-    import random
-    ratings = list(_public_ratings(arena)[:60])
-    if len(ratings) < 2:
-        return None, None
-    # Prefer close-rated pairs (informative votes), with some randomness.
-    ratings_sorted = sorted(ratings, key=lambda r: r.rating)
-    i = random.randrange(len(ratings_sorted) - 1)
-    # 70%: neighbors; 30%: fully random.
-    if random.random() < 0.7:
-        ra, rb = ratings_sorted[i], ratings_sorted[i + 1]
-    else:
-        ra, rb = random.sample(ratings, 2)
-    subs = [ra.submission, rb.submission]
-    random.shuffle(subs)
-    return subs[0], subs[1]
-
-
-def vote(request):
-    arena = get_arena()
-    if request.method == 'POST':
-        try:
-            a_id = int(request.POST.get('a_id', 0))
-            b_id = int(request.POST.get('b_id', 0))
-        except (TypeError, ValueError):
-            messages.error(request, 'Bad matchup. Try again.')
-            return redirect('vote')
-        sub_a = get_object_or_404(Submission, pk=a_id, contest=arena)
-        sub_b = get_object_or_404(Submission, pk=b_id, contest=arena)
-        form = VoteForm(request.POST)
-        if form.is_valid():
-            outcome = form.cleaned_data['winner']
-            reason = form.cleaned_data.get('reason', '')
-            judge = (
-                request.user.username[:100]
-                if request.user.is_authenticated else 'human'
-            )
-            m = Match.objects.create(
-                contest=arena, submission_a=sub_a, submission_b=sub_b, judge=judge,
-            )
-            try:
-                apply_startup_vote(m, outcome, reason, judge=judge)
-            except ValueError as e:
-                messages.error(request, str(e))
-                return redirect('vote')
-            messages.success(request, 'Vote counted. Here is another.')
-            return redirect('vote')
-        # invalid form: re-render same pair
-        return render(request, 'core/vote.html', {
-            'arena': arena, 'sub_a': sub_a, 'sub_b': sub_b, 'form': form,
-        })
-    sub_a, sub_b = _pick_vote_pair(arena)
-    if not sub_a:
-        messages.info(request, 'Need at least 2 public submissions before voting. Submit one!')
-        return redirect('submit')
-    return render(request, 'core/vote.html', {
-        'arena': arena, 'sub_a': sub_a, 'sub_b': sub_b, 'form': VoteForm(),
-    })
-
-
 # ------------------------------------------------------------------ fetch API
 
 def api_leaderboard(request):
@@ -277,29 +216,3 @@ def api_submit(request):
             'reason': m.reason,
         } for m in outcomes],
     })
-
-
-@require_POST
-def api_vote(request):
-    """Human/agent vote: POST {a_id, b_id, winner: a|b|tie, reason?}."""
-    import json
-    try:
-        data = json.loads(request.body or '{}') if request.content_type == 'application/json' else request.POST
-    except json.JSONDecodeError:
-        return JsonResponse({'error': 'invalid JSON'}, status=400)
-    arena = get_arena()
-    try:
-        sub_a = Submission.objects.get(pk=int(data.get('a_id', 0)), contest=arena)
-        sub_b = Submission.objects.get(pk=int(data.get('b_id', 0)), contest=arena)
-    except (Submission.DoesNotExist, TypeError, ValueError):
-        return JsonResponse({'error': 'unknown a_id/b_id'}, status=400)
-    outcome = data.get('winner')
-    if outcome not in ('a', 'b'):
-        return JsonResponse({'error': "winner must be 'a' or 'b' (ties are not allowed)"}, status=400)
-    judge = str(data.get('judge', 'human'))[:100] or 'human'
-    m = Match.objects.create(contest=arena, submission_a=sub_a, submission_b=sub_b, judge=judge)
-    try:
-        apply_startup_vote(m, outcome, str(data.get('reason', '')), judge=judge)
-    except ValueError as e:
-        return JsonResponse({'error': str(e)}, status=400)
-    return JsonResponse({'ok': True, 'match_id': m.id})

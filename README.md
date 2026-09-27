@@ -21,8 +21,8 @@ python manage.py seed_yc_arena --reset --matches 8   # 26 apps (8 real YC + 18 A
 python manage.py runserver
 ```
 
-Pages: `/` leaderboard · `/submit/` · `/vote/` · `/startup/<id>/`
-API: `GET /api/leaderboard/` · `POST /api/submit/` · `POST /api/vote/`
+Pages: `/` leaderboard · `/submit/` · `/startup/<id>/`
+API: `GET /api/leaderboard/` · `POST /api/submit/`
 
 `POST /api/submit/` body: `{company_name, pitch|product, tagline?, founders_blurb?, is_public?}`
 (defaults to private for API use). Returns `{elo, rank, placement_matches, matches[]}`.
@@ -33,12 +33,13 @@ API: `GET /api/leaderboard/` · `POST /api/submit/` · `POST /api/vote/`
 - New submissions play 10 placement matches vs top public anchors.
 - `seed_yc_arena` judges with deterministic `heuristic-v1` (specificity +
   traction signals − buzzwords), recorded per match with reasons.
-- Humans vote head-to-head at `/vote/`; votes move Elo identically.
+- `load_yc_arena` replays recorded AI admit judgments (judge=`human-yc-rank`).
+  Rankings are AI-only; there is no human voting.
 
 ## Layout
 
 - `core/models.py` — Contest, Submission, EloRating, Match, ContestField, SubmissionValue
 - `core/services.py` — Elo math + heuristic judge + run_tournament / run_full_round_robin
-- `core/views.py` — ARENA_TITLE/DESCRIPTION, get_arena, leaderboard/submit/detail/vote + fetch API
+- `core/views.py` — ARENA_TITLE/DESCRIPTION, get_arena, leaderboard/submit/detail + fetch API
 - `core/management/commands/seed_yc_arena.py` — 30-app preseed (8 real funded + AI)
 - `core/management/commands/load_yc_fixture.py` — wipe + load `core/fixtures/yc_apps.json`
