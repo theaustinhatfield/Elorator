@@ -86,6 +86,11 @@ class Command(BaseCommand):
                     f"Admit-rank #{ranks[t[0]]} {t[0]} vs #{ranks[t[1]]} {t[1]}: "
                     f"near-identical ideas in the same space; genuine tie."), judge=judge)
                 n += 1
+        for a_name, b_name, winner, reason in fx.get('rematches', []):
+            sa, sb = created[a_name], created[b_name]
+            m = Match.objects.create(contest=arena, submission_a=sa, submission_b=sb, judge=judge)
+            apply_startup_vote(m, winner, reason, judge=judge)
+            n += 1
         self.stdout.write(f'played {n} judged matches')
 
         board = (EloRating.objects.filter(contest=arena).select_related('submission')

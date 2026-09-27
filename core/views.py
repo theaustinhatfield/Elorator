@@ -291,8 +291,8 @@ def api_vote(request):
     except (Submission.DoesNotExist, TypeError, ValueError):
         return JsonResponse({'error': 'unknown a_id/b_id'}, status=400)
     outcome = data.get('winner')
-    if outcome not in ('a', 'b', 'tie'):
-        return JsonResponse({'error': "winner must be 'a', 'b' or 'tie'"}, status=400)
+    if outcome not in ('a', 'b'):
+        return JsonResponse({'error': "winner must be 'a' or 'b' (ties are not allowed)"}, status=400)
     judge = str(data.get('judge', 'human'))[:100] or 'human'
     m = Match.objects.create(contest=arena, submission_a=sub_a, submission_b=sub_b, judge=judge)
     try:

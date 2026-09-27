@@ -48,7 +48,7 @@ class SubmissionForm(forms.Form):
 
 
 class VoteForm(forms.Form):
-    winner = forms.ChoiceField(choices=[('a', 'A wins'), ('b', 'B wins'), ('tie', 'Tie')],
+    winner = forms.ChoiceField(choices=[('a', 'A wins'), ('b', 'B wins')],
         widget=forms.RadioSelect)
     reason = forms.CharField(required=False, widget=forms.Textarea(
         attrs={'class': 'form-textarea', 'rows': 2, 'placeholder': 'Why? (optional, one line)'}))

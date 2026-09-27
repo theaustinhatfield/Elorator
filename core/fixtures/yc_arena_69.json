@@ -284,16 +284,11 @@
    "rank": 69
   }
  },
- "ties": [
-  [
-   "Courier",
-   "MagicBell"
+  "ties": [],
+  "rematches": [
+   ["Courier", "MagicBell", "a", "Rematch (was tied, ties abolished): Courier over MagicBell - clearer intelligent-routing wedge over the embeddable-center wrapper."],
+   ["Dendron", "Athens Research", "a", "Rematch (was tied, ties abolished): Dendron over Athens Research - opinionated hierarchy wedge beats the open-source-following play."]
   ],
-  [
-   "Dendron",
-   "Athens Research"
-  ]
- ],
  "apps": [
   {
    "company": "ShiftCover",

@@ -120,21 +120,21 @@ def _pitch_score(sub):
 
 
 def heuristic_judge(sub_a, sub_b):
-    """Deterministic heuristic-v1 judge. Returns (outcome, reason)."""
+    """Deterministic heuristic-v1 judge. Returns (outcome, reason).
+
+    Decisive by design: no ties. A dead-even score breaks toward 'a'
+    with the closeness recorded in the reason.
+    """
     sa, sb = _pitch_score(sub_a), _pitch_score(sub_b)
     diff = sa - sb
-    if abs(diff) < 0.75:
-        return 'tie', (
-            f'heuristic-v1: both scored ~{sa:.1f} vs {sb:.1f}; '
-            'no clear specificity/traction edge.'
-        )
-    if diff > 0:
+    close = ' (dead even on specificity/traction — coin-break toward A)' if abs(diff) < 0.75 else ''
+    if diff >= 0:
         return 'a', (
-            f'heuristic-v1: {sub_a.display_name} scores {sa:.1f} vs {sb:.1f} — '
+            f'heuristic-v1: {sub_a.display_name} scores {sa:.1f} vs {sb:.1f}{close} — '
             'more specific pitch with clearer customer, traction, or numbers.'
         )
     return 'b', (
-        f'heuristic-v1: {sub_b.display_name} scores {sb:.1f} vs {sa:.1f} — '
+        f'heuristic-v1: {sub_b.display_name} scores {sb:.1f} vs {sa:.1f}{close} — '
         'more specific pitch with clearer customer, traction, or numbers.'
     )
 
