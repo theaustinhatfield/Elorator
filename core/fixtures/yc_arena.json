@@ -4,291 +4,381 @@
   "criterion": "which startup would you rather admit into YC (idea merit only, no team, no traction)",
   "matches_per_entry": 8,
   "seed": 7,
-  "n_apps": 69
+  "n_apps": 89
  },
  "ranks": {
   "Dropbox": {
-   "note": "Universal acute pain, perfect wedge, enormous market",
-   "rank": 1
+   "rank": 1,
+   "note": "Universal acute pain, perfect wedge, enormous market"
   },
   "Paystack": {
-   "note": "Payments for an underserved continent, crisp wedge",
-   "rank": 2
+   "rank": 2,
+   "note": "Payments for an underserved continent, crisp wedge"
   },
   "GitLab": {
-   "note": "Open-source collaboration with free distribution insight",
-   "rank": 3
+   "rank": 3,
+   "note": "Open-source collaboration with free distribution insight"
   },
   "Mixpanel": {
-   "note": "New capability (events not pageviews), clear buyer",
-   "rank": 4
+   "rank": 4,
+   "note": "New capability (events not pageviews), clear buyer"
   },
   "Cruise": {
-   "note": "10x cheaper self-driving, enormous ambition plus wedge",
-   "rank": 5
+   "rank": 5,
+   "note": "10x cheaper self-driving, enormous ambition plus wedge"
   },
   "Standard Treasury": {
-   "note": "Twilio-for-banks middleware, huge and obvious",
-   "rank": 6
+   "rank": 6,
+   "note": "Twilio-for-banks middleware, huge and obvious"
   },
   "Prolific": {
-   "note": "Two-sided trust pain in research, strong mechanics",
-   "rank": 7
+   "rank": 7,
+   "note": "Two-sided trust pain in research, strong mechanics"
   },
   "ScopeNote": {
-   "note": "The ticket IS the summary; kills the notes black hole",
-   "rank": 8
+   "rank": 8,
+   "note": "The ticket IS the summary; kills the notes black hole"
   },
   "FormFix": {
-   "note": "Shape-shifter for payer rules; rulebook is the moat",
-   "rank": 9
+   "rank": 9,
+   "note": "Shape-shifter for payer rules; rulebook is the moat"
   },
   "CommandBar": {
-   "note": "Bought-not-built component with network-effect map",
-   "rank": 10
+   "rank": 10,
+   "note": "Bought-not-built component with network-effect map"
   },
   "Courier": {
-   "note": "Smart multi-channel routing, crisp developer pain",
-   "rank": 11
+   "rank": 11,
+   "note": "Smart multi-channel routing, crisp developer pain"
+  },
+  "PermitDesk": {
+   "rank": 12,
+   "note": "municipal shape-shifter with a compounding city library"
   },
   "MagicBell": {
-   "note": "Embeddable notification center, same clear pain",
-   "rank": 12
+   "rank": 13,
+   "note": "Embeddable notification center, same clear pain"
   },
   "Keywords AI": {
-   "note": "LLM cost/quality routing, timely and concrete",
-   "rank": 13
+   "rank": 14,
+   "note": "LLM cost/quality routing, timely and concrete"
+  },
+  "ChartChase": {
+   "rank": 15,
+   "note": "leakage recovery is found revenue with a clear buyer"
   },
   "Apptimize": {
-   "note": "Mobile A/B testing without app-store purgatory",
-   "rank": 14
+   "rank": 16,
+   "note": "Mobile A/B testing without app-store purgatory"
   },
   "OpenPhone": {
-   "note": "SMB phone plus self-filling CRM, big market",
-   "rank": 15
+   "rank": 17,
+   "note": "SMB phone plus self-filling CRM, big market"
   },
   "Kash": {
-   "note": "Fast plus cheap retail payments, giant market",
-   "rank": 16
+   "rank": 18,
+   "note": "Fast plus cheap retail payments, giant market"
   },
   "bxblue": {
-   "note": "Online payroll loans in Brazil, huge clear wedge",
-   "rank": 17
+   "rank": 19,
+   "note": "Online payroll loans in Brazil, huge clear wedge"
   },
   "Slite": {
-   "note": "Team knowledge with Slack-like pull, crowded",
-   "rank": 18
+   "rank": 20,
+   "note": "Team knowledge with Slack-like pull, crowded"
   },
   "Goodly": {
-   "note": "Student-loan benefit with regulatory tailwind",
-   "rank": 19
+   "rank": 21,
+   "note": "Student-loan benefit with regulatory tailwind"
   },
   "Flex": {
-   "note": "Differentiated product plus DTC voice, real wedge",
-   "rank": 20
+   "rank": 22,
+   "note": "Differentiated product plus DTC voice, real wedge"
   },
   "Lollipuff": {
-   "note": "Trust wedge (authenticity) in luxury resale",
-   "rank": 21
+   "rank": 23,
+   "note": "Trust wedge (authenticity) in luxury resale"
   },
   "The Muse": {
-   "note": "Career platform with sharp demographic wedge",
-   "rank": 22
+   "rank": 24,
+   "note": "Career platform with sharp demographic wedge"
   },
   "Simple Habit": {
-   "note": "Meditation marketplace vs single-channel incumbents",
-   "rank": 23
+   "rank": 25,
+   "note": "Meditation marketplace vs single-channel incumbents"
   },
   "Virtually": {
-   "note": "Picks-and-shovels toolkit for online trade schools",
-   "rank": 24
+   "rank": 26,
+   "note": "Picks-and-shovels toolkit for online trade schools"
   },
   "Mimir": {
-   "note": "CS courses for schools with no staff, clear wedge",
-   "rank": 25
+   "rank": 27,
+   "note": "CS courses for schools with no staff, clear wedge"
   },
   "Dendron": {
-   "note": "Opinionated hierarchy wedge in a hot notes space",
-   "rank": 26
+   "rank": 28,
+   "note": "Opinionated hierarchy wedge in a hot notes space"
   },
   "Athens Research": {
-   "note": "Open-source community wedge, same space",
-   "rank": 27
+   "rank": 29,
+   "note": "Open-source community wedge, same space"
   },
   "SketchDeck": {
-   "note": "Design-team-as-service; clear pain, services drag",
-   "rank": 28
+   "rank": 30,
+   "note": "Design-team-as-service; clear pain, services drag"
+  },
+  "LienFile": {
+   "rank": 31,
+   "note": "fifty-state deadline product that never sleeps"
   },
   "derivative/d (Shotput)": {
-   "note": "Fulfillment API for small product companies",
-   "rank": 29
+   "rank": 32,
+   "note": "Fulfillment API for small product companies"
+  },
+  "DockDoor": {
+   "rank": 33,
+   "note": "calendar both sides adopt; detention math sells it"
+  },
+  "BidBond": {
+   "rank": 34,
+   "note": "administrative bid losses fixed at assembly time"
   },
   "InEvent": {
-   "note": "All-in-one event SaaS, big tickets, heavy sales",
-   "rank": 30
+   "rank": 35,
+   "note": "All-in-one event SaaS, big tickets, heavy sales"
+  },
+  "ReturnCounter": {
+   "rank": 36,
+   "note": "consistent policy as fraud deterrent plus margin"
   },
   "VEED": {
-   "note": "Browser video editing for creators, great wedge",
-   "rank": 31
+   "rank": 37,
+   "note": "Browser video editing for creators, great wedge"
+  },
+  "MenuPrint": {
+   "rank": 38,
+   "note": "regulation converts existing recipes into required documents"
   },
   "One Month Rails (One Month)": {
-   "note": "Coding crash course, proven format, education caps",
-   "rank": 32
+   "rank": 39,
+   "note": "Coding crash course, proven format, education caps"
   },
   "MakeGamesWithUs (Make School)": {
-   "note": "Game-publish matchmaking with merit mechanics",
-   "rank": 33
+   "rank": 40,
+   "note": "Game-publish matchmaking with merit mechanics"
   },
   "LeaseLedger": {
-   "note": "Found-money CAM audits made cheap at small scale",
-   "rank": 34
+   "rank": 41,
+   "note": "Found-money CAM audits made cheap at small scale"
   },
   "RecallRoute": {
-   "note": "Free fix aligns shop incentive with safety outcome",
-   "rank": 35
+   "rank": 42,
+   "note": "Free fix aligns shop incentive with safety outcome"
   },
   "DocketDraft": {
-   "note": "Procedure distribution for sub-lawyer amounts",
-   "rank": 36
+   "rank": 43,
+   "note": "Procedure distribution for sub-lawyer amounts"
   },
   "TipGuard": {
-   "note": "Regulatory-window insurance against settlements",
-   "rank": 37
+   "rank": 44,
+   "note": "Regulatory-window insurance against settlements"
   },
   "Task Pigeon": {
-   "note": "Tasks plus freelancer fulfillment, odd but interesting",
-   "rank": 38
+   "rank": 45,
+   "note": "Tasks plus freelancer fulfillment, odd but interesting"
   },
   "Proxino (Taazr)": {
-   "note": "Bug detection by inference, clever, technical risk",
-   "rank": 39
+   "rank": 46,
+   "note": "Bug detection by inference, clever, technical risk"
   },
   "Trestle": {
-   "note": "Expertise directory; real pain, build-vs-buy risk",
-   "rank": 40
+   "rank": 47,
+   "note": "Expertise directory; real pain, build-vs-buy risk"
+  },
+  "KeyBox": {
+   "rank": 48,
+   "note": "timed manufacturing with photographic proof"
+  },
+  "RebateRun": {
+   "rank": 49,
+   "note": "found money that also closes equipment sales"
   },
   "Buffer": {
-   "note": "Simple scheduling wedge, small but real",
-   "rank": 41
+   "rank": 50,
+   "note": "Simple scheduling wedge, small but real"
   },
   "ShiftCover": {
-   "note": "Race-to-claim clears shifts; crowded ops space",
-   "rank": 42
+   "rank": 51,
+   "note": "Race-to-claim clears shifts; crowded ops space"
   },
   "ShelfCheck": {
-   "note": "Daily phone-camera shrink check, thin moat",
-   "rank": 43
+   "rank": 52,
+   "note": "Daily phone-camera shrink check, thin moat"
   },
   "SubSplit": {
-   "note": "Real fights, defensible math, small ACVs",
-   "rank": 44
+   "rank": 53,
+   "note": "Real fights, defensible math, small ACVs"
   },
   "CrashCart": {
-   "note": "Real citations risk, slow clinical sales cycles",
-   "rank": 45
+   "rank": 54,
+   "note": "Real citations risk, slow clinical sales cycles"
   },
   "80,000 Hours": {
-   "note": "Worthy nonprofit, not venture-scale",
-   "rank": 46
+   "rank": 55,
+   "note": "Worthy nonprofit, not venture-scale"
+  },
+  "CourtDate": {
+   "rank": 56,
+   "note": "justice infrastructure sold to slow counties"
   },
   "Supernote (Metlo)": {
-   "note": "DS tooling, vague at application time",
-   "rank": 47
+   "rank": 57,
+   "note": "DS tooling, vague at application time"
+  },
+  "GrantGrid": {
+   "rank": 58,
+   "note": "rubric-direct drafting; nonprofit budgets cap it"
   },
   "Mattermark (Referly)": {
-   "note": "Startup data terminal, data-moat question",
-   "rank": 48
+   "rank": 59,
+   "note": "Startup data terminal, data-moat question"
   },
   "Employbl": {
-   "note": "Talent leads in a crowded sourcing market",
-   "rank": 49
+   "rank": 60,
+   "note": "Talent leads in a crowded sourcing market"
+  },
+  "InvoiceChase": {
+   "rank": 61,
+   "note": "persistence as a service in a crowded space"
   },
   "Code For Cash": {
-   "note": "Dev-job matching with chicken-and-egg",
-   "rank": 50
+   "rank": 62,
+   "note": "Dev-job matching with chicken-and-egg"
   },
   "CredCount": {
-   "note": "Credibility from social data, buyer unclear",
-   "rank": 51
+   "rank": 63,
+   "note": "Credibility from social data, buyer unclear"
   },
   "Parsnip": {
-   "note": "Beloved learning problem, thin monetization",
-   "rank": 52
+   "rank": 64,
+   "note": "Beloved learning problem, thin monetization"
   },
   "Pic ur Photo": {
-   "note": "Photographer marketplace, operationally heavy",
-   "rank": 53
+   "rank": 65,
+   "note": "Photographer marketplace, operationally heavy"
   },
   "Pet Story": {
-   "note": "Sweet wedge for walkers, small market",
-   "rank": 54
+   "rank": 66,
+   "note": "Sweet wedge for walkers, small market"
+  },
+  "ChairFill": {
+   "rank": 67,
+   "note": "proven backfill mechanic, small ticket"
+  },
+  "VaxTrack": {
+   "rank": 68,
+   "note": "one record collected a dozen times, small market"
   },
   "PMAlerts": {
-   "note": "Lead-gen listening, feature-shaped",
-   "rank": 55
+   "rank": 69,
+   "note": "Lead-gen listening, feature-shaped"
   },
   "Parobyte Technologies": {
-   "note": "Brutal ops, emerging-market logic only",
-   "rank": 56
+   "rank": 70,
+   "note": "Brutal ops, emerging-market logic only"
+  },
+  "TowLog": {
+   "rank": 71,
+   "note": "voided liens are pure loss; tiny market"
+  },
+  "GreaseTrap": {
+   "rank": 72,
+   "note": "inspector records from data already flowing"
   },
   "Simula": {
-   "note": "Contrarian VR thesis, tiny near-term market",
-   "rank": 57
+   "rank": 73,
+   "note": "Contrarian VR thesis, tiny near-term market"
+  },
+  "SnowRoute": {
+   "rank": 74,
+   "note": "proof product for invisible work, seasonal"
+  },
+  "SepticScan": {
+   "rank": 75,
+   "note": "lender format for the least digital link"
   },
   "Circles": {
-   "note": "Vague AI wellness coach, crowded",
-   "rank": 58
+   "rank": 76,
+   "note": "Vague AI wellness coach, crowded"
+  },
+  "FieldTrip": {
+   "rank": 77,
+   "note": "ends the envelope chase; slow school sales"
   },
   "Streamplate": {
-   "note": "Everything-app for food, no wedge",
-   "rank": 59
+   "rank": 78,
+   "note": "Everything-app for food, no wedge"
   },
   "Swelly": {
-   "note": "Thin polling bot, no moat",
-   "rank": 60
+   "rank": 79,
+   "note": "Thin polling bot, no moat"
   },
   "Laitum": {
-   "note": "Vague edtech plus community claims",
-   "rank": 61
+   "rank": 80,
+   "note": "Vague edtech plus community claims"
   },
   "Learn Venue": {
-   "note": "OEM licensing, slow concentrated buyers",
-   "rank": 62
+   "rank": 81,
+   "note": "OEM licensing, slow concentrated buyers"
   },
   "Bubblin Superbooks": {
-   "note": "No business model attached",
-   "rank": 63
+   "rank": 82,
+   "note": "No business model attached"
+  },
+  "HarvestSlot": {
+   "rank": 83,
+   "note": "volunteer-run markets on micro budgets"
   },
   "Spreadsheet Magic": {
-   "note": "Vague positioning on visual dataflow",
-   "rank": 64
+   "rank": 84,
+   "note": "Vague positioning on visual dataflow"
   },
   "Syllble": {
-   "note": "Double chicken-and-egg marketplace",
-   "rank": 65
+   "rank": 85,
+   "note": "Double chicken-and-egg marketplace"
   },
   "YogaTrail": {
-   "note": "Small directory, ads-dependent",
-   "rank": 66
+   "rank": 86,
+   "note": "Small directory, ads-dependent"
   },
   "Relationship Hero (WittyThumbs)": {
-   "note": "Unscalable coaching services",
-   "rank": 67
+   "rank": 87,
+   "note": "Unscalable coaching services"
   },
   "Seeing Interactive (Own Local)": {
-   "note": "Declining newspaper channel",
-   "rank": 68
+   "rank": 88,
+   "note": "Declining newspaper channel"
   },
   "AthleteNet (FamilyLeaf)": {
-   "note": "Tiny niche site builder",
-   "rank": 69
+   "rank": 89,
+   "note": "Tiny niche site builder"
   }
  },
-  "ties": [],
-  "rematches": [
-   ["Courier", "MagicBell", "a", "Rematch (was tied, ties abolished): Courier over MagicBell - clearer intelligent-routing wedge over the embeddable-center wrapper."],
-   ["Dendron", "Athens Research", "a", "Rematch (was tied, ties abolished): Dendron over Athens Research - opinionated hierarchy wedge beats the open-source-following play."]
+ "ties": [],
+ "rematches": [
+  [
+   "Courier",
+   "MagicBell",
+   "a",
+   "Rematch (was tied, ties abolished): Courier over MagicBell - clearer intelligent-routing wedge over the embeddable-center wrapper."
   ],
+  [
+   "Dendron",
+   "Athens Research",
+   "a",
+   "Rematch (was tied, ties abolished): Dendron over Athens Research - opinionated hierarchy wedge beats the open-source-following play."
+  ]
+ ],
  "apps": [
   {
    "company": "ShiftCover",
@@ -1255,6 +1345,286 @@
    "outcome": "successful",
    "source": "human",
    "model": ""
+  },
+  {
+   "company": "PermitDesk",
+   "tagline": "Permit packets shaped to each city",
+   "product": "PermitDesk turns a residential remodeler's address and scope of work into a complete permit submittal packet shaped to that specific city: the right forms, the right plan annotations, the common gotchas pre-checked before the first submission. When the city kicks it back, the correction checklist writes itself from the rejection letter.",
+   "whats_new": "Remodelers submit the same generic packet everywhere and bounce through resubmittals for months, or the office manager hand-rebuilds each packet per city. Every jurisdiction wants the same facts in a slightly different shape.",
+   "competitors": "Permit-expediting consultants who charge per project and general contractor software that stores documents without assembling them.",
+   "insight": "The product is a shape-shifter over municipal checklists. The library of city requirements that must be maintained forever looks like a burden, but it is the moat.",
+   "money": "Flat fee per permit submission, with an annual plan for high-volume remodelers.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
+  },
+  {
+   "company": "ChartChase",
+   "tagline": "Specialist referrals that close the loop",
+   "product": "ChartChase tracks every outbound referral an independent specialty practice sends, nudges the patient and the referring office until the visit actually happens, and reports exactly where referrals leak. The schedule fills from leakage the practice already paid to create.",
+   "whats_new": "Referrals leave by fax and disappear. Practices discover leakage months later in aggregate revenue, with no way to see which relationships or steps failed.",
+   "competitors": "Fax-based workflows and EHR referral modules that transmit without following up.",
+   "insight": "The schedule, not the fax, is the product. A large share of referred patients never book, so recovering them is found revenue against marketing already spent.",
+   "money": "Monthly subscription per practice location.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
+  },
+  {
+   "company": "LienFile",
+   "tagline": "Mechanics liens filed before rights expire",
+   "product": "LienFile tracks preliminary-notice requirements and filing deadlines across states for small contractors and suppliers, prepares each notice from job records, and files before rights expire. Every deadline is calendared from the first day on the job, not discovered afterward.",
+   "whats_new": "Small contractors learn about lien deadlines from an attorney after the right has already expired, or pay lawyers hourly to manage what is essentially deadline tracking.",
+   "competitors": "Construction attorneys billing hourly and generic deadline software that knows nothing of lien law.",
+   "insight": "Lien law is pure deadline management across fifty different rule sets. Software never misses a date, and the calendar is the whole product.",
+   "money": "Flat fee per filing plus a monthly monitoring plan per company.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
+  },
+  {
+   "company": "DockDoor",
+   "tagline": "Dock appointments that end truck queues",
+   "product": "DockDoor gives small warehouses a booking calendar carriers actually use: drivers reserve dock slots, get turn-by-turn arrival windows, and both sides see the live queue. Detention disputes settle from timestamps instead of arguments.",
+   "whats_new": "Deliveries arrive whenever trucks arrive, coordinated by phone calls. Carriers burn hours in the yard while warehouse staff scramble, and nobody can prove whose delay it was.",
+   "competitors": "Yard-management suites priced for enterprise distribution centers and the telephone.",
+   "insight": "Detention costs both sides real money, so both sides adopt the calendar willingly. The appointment is the rare product whose buyer and user want the same thing.",
+   "money": "Monthly subscription per warehouse.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
+  },
+  {
+   "company": "BidBond",
+   "tagline": "Bid packages small subs actually finish",
+   "product": "BidBond reads a general contractor's bid invitation alongside a small subcontractor's past bids and assembles a compliant package: the forms, the certificates, the references, the exclusions stated correctly. Estimators review instead of assemble, and nothing misses the deadline for want of a form.",
+   "whats_new": "Small subs lose bids on paperwork completeness rather than price, discovering missing bonds or expired certificates after the letting closes. Estimators rebuild every package by hand.",
+   "competitors": "Plan rooms that distribute invites without helping respond, and estimator overtime.",
+   "insight": "Most small-sub bid losses are administrative, not economic. Completeness checking at assembly time is the entire product.",
+   "money": "Per-seat subscription plus a small fee per submitted bid.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
+  },
+  {
+   "company": "ReturnCounter",
+   "tagline": "Return-desk triage for indie retailers",
+   "product": "ReturnCounter scans the receipt and the item at an independent retailer's return desk, applies the store's own policy consistently, flags fraud patterns across visits, and prints the label or exchange slip. Managers stop adjudicating every return in person.",
+   "whats_new": "Returns run on manager judgment calls and long lines. Policies exist on paper while every associate enforces a different version, and fraud reveals itself only in aggregate shrink.",
+   "competitors": "Enterprise returns software and the manager's gut.",
+   "insight": "Returns are where small retailers bleed margin and floor time. Policy applied the same way every time is the product, and consistency itself deters fraud.",
+   "money": "Monthly subscription per store.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
+  },
+  {
+   "company": "MenuPrint",
+   "tagline": "Allergen charts from existing recipes",
+   "product": "MenuPrint converts an independent restaurant's recipes and supplier spec sheets into compliant allergen charts and printed day labels. When a supplier swaps an ingredient, the affected dishes re-flag automatically instead of waiting for someone to notice.",
+   "whats_new": "Kitchens track allergens on memory and sticky notes while labeling rules keep tightening. The recipe data already exists; nobody converts it into compliance documents.",
+   "competitors": "Food-safety consultants billing hourly and enterprise recipe-management suites.",
+   "insight": "Regulators ask for documents, not intentions. The conversion from recipes the kitchen already has into the chart the inspector wants is the whole product.",
+   "money": "Monthly subscription per location.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
+  },
+  {
+   "company": "KeyBox",
+   "tagline": "Turnovers run like timed manufacturing",
+   "product": "KeyBox syncs short-term-rental bookings into cleaner dispatch: whoever claims the turnover gets a photo checklist, restock flags, and a deadline, while the owner receives timestamped before-and-after proof. Late or missed cleans surface before check-in, not after.",
+   "whats_new": "Turnovers coordinate over group chats and spreadsheets. Owners discover missed cleans from guest complaints, and cleaners juggle overlapping bookings by text.",
+   "competitors": "Property-management software that lists bookings without dispatching work, and group chats.",
+   "insight": "A turnover is timed manufacturing with a hard deadline. The photo checklist is quality control, and proof-of-clean is what owners actually buy.",
+   "money": "Monthly fee per managed unit.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
+  },
+  {
+   "company": "RebateRun",
+   "tagline": "Utility rebates trades stop leaving behind",
+   "product": "RebateRun matches each HVAC, electrical, or insulation job against the current rebate programs of the local utilities, completes the applications from job records, and tracks them to payout. Programs change quarterly across hundreds of utilities, and the software watches all of them.",
+   "whats_new": "Contractors leave rebate money unclaimed because no office has time to track hundreds of shifting programs, or they learn about a rebate after the qualifying equipment is already installed wrong.",
+   "competitors": "Utility program portals that list rules without completing anything, and office-manager memory.",
+   "insight": "The tracking is the product. Rebates are found money that also closes sales, so the contractor adopts eagerly once the paperwork costs nothing.",
+   "money": "A share of rebates recovered.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
+  },
+  {
+   "company": "GrantGrid",
+   "tagline": "Grant drafts written to the rubric",
+   "product": "GrantGrid drafts small-nonprofit grant applications against each funder's published scoring rubric: narratives assembled from the organization's past awards and program records, budgets formatted to the funder's template, attachments checked off. Directors edit instead of starting from a blank page.",
+   "whats_new": "Executive directors sacrifice weekends to applications or hire freelance writers per grant. Generic writing help knows nothing of any funder's rubric, so drafts score poorly on the criteria that matter.",
+   "competitors": "Freelance grant writers and generic proposal templates.",
+   "insight": "Funders score against published rubrics, so software that writes directly to the rubric beats better prose. The rubric library compounds with every funder added.",
+   "money": "Annual subscription plus a fee per submitted application.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
+  },
+  {
+   "company": "InvoiceChase",
+   "tagline": "Late invoices chased to the end",
+   "product": "InvoiceChase watches a freelancer's or small studio's accounting data for overdue invoices and runs the full escalation sequence: polite reminders, firmer notices, late-fee warnings, and finally a finished demand packet. The follow-up never depends on anyone's courage that week.",
+   "whats_new": "Late payment is handled with awkward personal emails that stop after one nudge, or handed to collection agencies that take a heavy cut and poison the relationship.",
+   "competitors": "Accounting software reminders that stop at one email, and traditional collection agencies.",
+   "insight": "The pain is not sending one reminder, it is sustaining the sequence. Persistence as a service collects what courage cannot.",
+   "money": "Flat monthly fee plus a small share of amounts recovered late.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
+  },
+  {
+   "company": "ChairFill",
+   "tagline": "Cancelled chairs refilled by text",
+   "product": "The moment a salon or barbershop appointment cancels, ChairFill texts waitlisted clients in priority order and books the first to confirm. Stylists see the gap close in minutes instead of losing the hour.",
+   "whats_new": "Cancellations sit empty because front desks cannot work the phones while serving walk-ins. Waitlists live on paper or in memory and never get called.",
+   "competitors": "Booking software waitlist features that notify nobody, and the paper list by the register.",
+   "insight": "The client who wanted that Saturday slot still wants it. Speed of Claiming is the product: minutes decide whether the hour earns.",
+   "money": "Monthly subscription per shop.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
+  },
+  {
+   "company": "SnowRoute",
+   "tagline": "Proof the plow was there",
+   "product": "SnowRoute combines plow location traces with timestamped arrival and completion photos into proof-of-service reports per property. Managers see every visit documented by morning, and slip-and-fall disputes meet timestamps instead of testimony.",
+   "whats_new": "Snow work is invisible by morning. Managers learn about missed lots from tenant complaints and defend claims with driver memory.",
+   "competitors": "GPS trackers that show dots without proof, and driver paperwork.",
+   "insight": "Nobody disputes a timestamped photo. Proof is the product because the work itself melts away.",
+   "money": "Seasonal fee per managed property.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
+  },
+  {
+   "company": "TowLog",
+   "tagline": "Tow notices that never miss deadline",
+   "product": "TowLog generates and mails state-compliant impound notices for small tow operators within statutory deadlines and tracks each vehicle's lien timeline to sale. Every deadline derives from the tow record itself, so nothing depends on office memory.",
+   "whats_new": "Office managers juggle notice deadlines across vehicle types while running the yard. A single missed mailing voids the lien and turns storage costs into losses.",
+   "competitors": "Tow-management software that tracks trucks without knowing notice law, and office-manager memory.",
+   "insight": "A voided lien is pure loss, so deadline software sells itself. The statute library is the moat.",
+   "money": "Monthly fee per storage lot.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
+  },
+  {
+   "company": "GreaseTrap",
+   "tagline": "Grease records inspectors accept",
+   "product": "GreaseTrap keeps a restaurant's grease-trap service log automatically: scheduled pickups, manifests from the hauler, and an inspector-ready record per location. Missing services flag before the inspector arrives, not during.",
+   "whats_new": "Service records live in paper manifests in a drawer, if they exist. Restaurants discover gaps when the inspector cites them.",
+   "competitors": "Hauler paperwork and the drawer of manifests.",
+   "insight": "Inspectors ask for records, not traps. The record is the product, and the hauler data to build it already flows.",
+   "money": "Monthly fee per location.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
+  },
+  {
+   "company": "VaxTrack",
+   "tagline": "Pet vaccine records that travel",
+   "product": "VaxTrack keeps each pet's vaccination record in one profile that groomers, boarders, and daycares accept, with expiry reminders before the next visit. Facilities stop re-collecting the same paperwork every stay.",
+   "whats_new": "Every facility re-collects vaccine records by texted photos and paper files. Expired shots surface at drop-off, turning customers away at the door.",
+   "competitors": "Paper files and texted photos.",
+   "insight": "The same record is collected a dozen times per pet. The traveling record removes the drop-off argument for everyone at once.",
+   "money": "Monthly fee per facility.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
+  },
+  {
+   "company": "FieldTrip",
+   "tagline": "Permission slips that fill themselves",
+   "product": "FieldTrip turns school field trips into digital permission and payment packets: rosters pre-filled from enrollment, fees collected online, medical notes attached, chaperone lists assembled. Teachers watch the roster complete itself instead of chasing paper.",
+   "whats_new": "Trips run on crumpled paper slips and cash envelopes. Teachers spend evenings reconciling who paid and who may go, and nurses never see the medical notes.",
+   "competitors": "Generic school-payment portals that collect money without assembling the trip, and paper.",
+   "insight": "The roster that fills itself is the product. Teachers adopt anything that ends the envelope chase, and districts follow teachers.",
+   "money": "Yearly fee per school.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
+  },
+  {
+   "company": "SepticScan",
+   "tagline": "Septic reports lenders accept",
+   "product": "SepticScan guides rural inspectors through photos and field tests into lender-ready septic reports: complete, legible, and shaped to what underwriters require. Deals stop dying on septic paperwork.",
+   "whats_new": "Inspections arrive as paper forms and illegible notes. Lenders kick them back for weeks while rate locks expire.",
+   "competitors": "Paper forms and generic inspection apps that know nothing of septic requirements.",
+   "insight": "Rural deals die on the least digital link in the chain. The lender's format is the product.",
+   "money": "Fee per completed inspection report.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
+  },
+  {
+   "company": "HarvestSlot",
+   "tagline": "Farmers-market logistics in one place",
+   "product": "HarvestSlot runs a farmers market's vendor logistics: applications, stall maps, fee collection, and waitlists in one place built for volunteer managers. Market day starts settled instead of chaotic.",
+   "whats_new": "Markets coordinate vendors over email threads and paper applications while volunteers chase fees. Stall assignments change by text the night before.",
+   "competitors": "Email, paper, and spreadsheets maintained by volunteers.",
+   "insight": "Markets run on volunteer labor, so the software must eliminate work rather than organize it. Collection plus assignment is the whole job.",
+   "money": "Seasonal fee per market.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
+  },
+  {
+   "company": "CourtDate",
+   "tagline": "Reminders that keep people free",
+   "product": "CourtDate texts public-defender clients before every hearing, confirms attendance, and flags unreachable clients to caseworkers early enough to intervene. Each appearance kept is a bench warrant avoided.",
+   "whats_new": "Clients miss court from forgetfulness and disorganization, and the system answers with warrants, jail time, and cascading life damage. Reminder infrastructure barely exists.",
+   "competitors": "Overworked caseworkers calling from spreadsheets.",
+   "insight": "Most failures to appear are forgetfulness, not flight. Reminders are justice infrastructure, and the buyer is the system that pays for warrants.",
+   "money": "Annual contract per county office.",
+   "gtm": "",
+   "batch": "",
+   "outcome": "pending",
+   "source": "ai",
+   "model": "muse-spark-1.3"
   }
  ]
 }

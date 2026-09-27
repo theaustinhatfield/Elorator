@@ -1,11 +1,11 @@
-"""Replay the 69-idea YC arena experiment.
+"""Replay the 89-idea YC arena experiment.
 
 Wipes the arena, loads the 59 real getintoyc.com applications (with actual
-admit outcomes) + 10 new Muse Spark 1.3 ideas, then replays the recorded
+admit outcomes) + 30 Muse Spark 1.3 ideas, then replays the recorded
 head-to-head admit judgments to rebuild the Elo ratings.
 
 Usage:
-    python manage.py load_yc_arena [--fixture core/fixtures/yc_arena_69.json]
+    python manage.py load_yc_arena [--fixture core/fixtures/yc_arena.json]
 """
 import json
 
@@ -13,10 +13,10 @@ from django.core.management.base import BaseCommand
 
 
 class Command(BaseCommand):
-    help = 'Load the 69-idea YC arena fixture and replay recorded admit judgments.'
+    help = 'Load the 89-idea YC arena fixture and replay recorded admit judgments.'
 
     def add_arguments(self, parser):
-        parser.add_argument('--fixture', default='core/fixtures/yc_arena_69.json')
+        parser.add_argument('--fixture', default='core/fixtures/yc_arena.json')
 
     def handle(self, *args, **opts):
         from core.models import EloRating, Match, Submission
