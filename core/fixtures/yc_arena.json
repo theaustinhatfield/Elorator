@@ -2,7 +2,7 @@
  "meta": {
   "judge": "human-yc-rank",
   "criterion": "which startup would you rather admit into YC (idea merit only, no team, no traction)",
-  "matches_per_entry": 8,
+  "matches_per_entry": 15,
   "seed": 7,
   "n_apps": 89
  },

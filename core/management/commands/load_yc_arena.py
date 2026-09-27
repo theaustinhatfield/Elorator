@@ -17,6 +17,8 @@ class Command(BaseCommand):
 
     def add_arguments(self, parser):
         parser.add_argument('--fixture', default='core/fixtures/yc_arena.json')
+        parser.add_argument('--matches', type=int, default=None,
+                            help='Matches per entry (default: fixture meta)')
 
     def handle(self, *args, **opts):
         from core.models import EloRating, Match, Submission
@@ -29,7 +31,7 @@ class Command(BaseCommand):
         notes = {k: v['note'] for k, v in fx['ranks'].items()}
         ties = {tuple(sorted(t)) for t in fx.get('ties', [])}
         judge = meta.get('judge', 'human-yc-rank')
-        mpe = meta.get('matches_per_entry', 8)
+        mpe = opts['matches'] or meta.get('matches_per_entry', 8)
         seed = meta.get('seed', 7)
 
         arena = get_arena()
