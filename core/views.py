@@ -56,17 +56,17 @@ def leaderboard(request):
     ]
     lo = min([g['avg'] for g in groups] + [1300])
     hi = max([g['avg'] for g in groups] + [1700])
+    top_avg = max(g['avg'] for g in groups)
     for g in groups:
         g['pct'] = round(100 * (g['avg'] - lo) / max(hi - lo, 1))
+        g['is_top'] = g['avg'] == top_avg
 
     ranked = list(enumerate(ratings, start=1))
-    spark_rows = [{'rank': i, 'r': r} for i, r in ranked if r.submission.source == 'ai']
     ctx = {
         'arena': arena,
         'ratings': ratings,
         'groups': groups,
-        'top_rows': [{'rank': i, 'r': r} for i, r in ranked[:30]],
-        'spark_rows': spark_rows,
+        'all_rows': [{'rank': i, 'r': r} for i, r in ranked],
         'total_submissions': len(ratings),
         'total_matches': arena.matches.count(),
     }
