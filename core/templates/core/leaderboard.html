@@ -31,15 +31,15 @@
         <div style="position:absolute; left:0; right:0; bottom:{{ t.pct }}%; border-top:1px dashed var(--separator); opacity:0.7;"></div>
         {% endfor %}
         {% for g in groups %}
-        <div style="flex:1; height:100%; display:flex; align-items:flex-end; justify-content:center; position:relative;">
-          <div style="width:64px; max-width:80%; height:{{ g.pct }}%; border-radius:6px 6px 0 0; {% if g.is_top %}background:#0A84FF;{% else %}background:#AEAEB2;{% endif %}" title="{{ g.label }}: {{ g.avg }}"></div>
+        <div style="flex:1; height:100%; position:relative;">
+          <div style="position:absolute; bottom:0; left:50%; transform:translateX(-50%); width:64px; max-width:80%; height:{{ g.pct }}%; border-radius:6px 6px 0 0; {% if g.is_top %}background:#0A84FF;{% else %}background:#AEAEB2;{% endif %}" title="{{ g.label }}: {{ g.avg }}"></div>
+          <div style="position:absolute; bottom:calc({{ g.pct }}% + 6px); left:0; right:0; text-align:center; font-size:15px; font-weight:800; white-space:nowrap;">{{ g.avg }}</div>
         </div>
         {% endfor %}
       </div>
       <div style="display:flex;">
         {% for g in groups %}
         <div style="flex:1; text-align:center; padding-top:8px;">
-          <div style="font-size:15px; font-weight:800;">{{ g.avg }}</div>
           <div style="font-size:13px; font-weight:800; margin-top:2px;">{{ g.label }}</div>
         </div>
         {% endfor %}
